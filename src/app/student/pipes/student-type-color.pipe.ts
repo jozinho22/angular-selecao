@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { POSITIONS } from '../students/positions';
+import { POSITIONS } from '../resources/positions';
 @Pipe({
   name: 'studentTypeColor'
 })

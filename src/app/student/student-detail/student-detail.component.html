@@ -1,0 +1,36 @@
+<div *ngIf="student" class="row">
+  <div class="col s12 m8 offset-m2">
+    <h2 class="header center">{{ student.name }}</h2>
+    <div class="card horizontal hoverable">
+      <div class="card-image">
+        <img [src]="student.picture" />
+      </div>
+
+      <div class="card-stacked">
+        <div class="card-content">
+          <table class="bordered striped">
+            <tbody>
+              <tr>
+                <td>Nom</td>
+                <td>{{ student.name }}</td>
+              </tr>
+              <tr>
+                <td>Age</td>
+                <td>{{ student.age }}</td>
+              </tr>
+              <tr>
+                <td>Position</td>
+                <td>{{ student.position }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card-action">
+          <a (click)="goBack()">Retour</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<h4 *ngIf="!student">Aucun joueur à afficher</h4>

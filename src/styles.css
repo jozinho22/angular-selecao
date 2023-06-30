@@ -4,7 +4,17 @@ html {
     color:rgb(201, 194, 194)
 }
 
-.card {
+.nav-wrapper {
+    position: relative;
+}
+
+.card, .btn-flat  {
+    top: 20px;
+    position: relative;
     background-color: rgb(58, 58, 58);
     color:rgb(201, 194, 194);
+}
+
+.students-list.card, .card-action a {
+    cursor: pointer;
 }

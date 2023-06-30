@@ -9,7 +9,7 @@ export class BorderCardDirective {
   private defaultColor: string = "#994C00";
 
   constructor(private el: ElementRef) { 
-    this.setBorder(this.defaultColor);
+    this.setBorder(this.initialColor);
   }
 
   @Input('studentBorderCard') borderColor: string; 

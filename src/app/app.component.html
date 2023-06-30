@@ -1,43 +1,7 @@
-<h1 class="center">Seleçao players</h1>
-<input #input type="number" (keyup.enter)="selectStudent(input.value)" />
-
-<div class="container">
-  <div class="row">
-    <div *ngFor="let student of studentsList" class="col m4 s6">
-      <!-- <div
-      *ngFor="let student of studentsList"
-      [ngClass]="
-        student.position == POSITIONS.GOAL_KEEPER
-          ? 'col m12 s12'
-          : student.position == POSITIONS.DEFENDER
-          ? 'col m3 s6'
-          : student.position == POSITIONS.MIDFIELDER
-          ? 'col m3 s6'
-          : student.position == POSITIONS.FORWARD
-          ? 'col m6 s6'
-          : 'col m4 s6'
-      "
-    > -->
-      <div class="card horizontal" studentBorderCard>
-        <div class="card-image">
-          <img [src]="student.picture" />
-        </div>
-        <div class="card-stacked">
-          <div class="card-content">
-            <p>{{ student.name }}</p>
-            <p>
-              <small>{{ student.createdAt | date }}</small>
-            </p>
-            <span class="{{ student.position | studentTypeColor }}">
-              {{ student.position }}
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
+<nav>
+  <div class="nav-wrapper teal">
+    <a href="#" class="brand-logo center"> Seleçao players </a>
   </div>
-</div>
-<!-- <p *ngIf="studentSelected">selected : {{ studentSelected.name }}</p>
-<p *ngIf="!studentSelected">Aucun étudiant ne correspond...</p>
+</nav>
 
-<p *ngFor="let student of studentsList">{{ student.name }}</p> -->
+<router-outlet />
