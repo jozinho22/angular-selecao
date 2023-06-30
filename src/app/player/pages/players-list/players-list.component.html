@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div *ngFor="let student of studentsList" class="col m4 s6">
+    <div *ngFor="let player of playersList" class="col m4 s6">
       <!-- <div
       *ngFor="let student of studentsList"
       [ngClass]="
@@ -16,21 +16,21 @@
       "
     > -->
       <div
-        (click)="goToStudent(student)"
-        class="students-list card horizontal"
+        (click)="goToStudent(player)"
+        class="players-list card horizontal"
         studentBorderCard
       >
         <div class="card-image">
-          <img [src]="student.picture" />
+          <img [src]="player.picture" />
         </div>
         <div class="card-stacked">
           <div class="card-content">
-            <p>{{ student.name }}</p>
+            <p>{{ player.name }}</p>
             <p>
-              <small>{{ student.createdAt | date }}</small>
+              <small>{{ player.createdAt | date }}</small>
             </p>
-            <span class="{{ student.position | studentTypeColor }}">
-              {{ student.position }}
+            <span class="{{ player.position | playerPositionColorPipe }}">
+              {{ player.position }}
             </span>
           </div>
         </div>

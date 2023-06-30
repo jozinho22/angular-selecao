@@ -1,8 +1,8 @@
-import {Student} from './student';
+import {Player} from './player';
 import {POSITIONS} from './positions';
 
 let k = 0;
-export const STUDENTS: Student[] = [
+export const PLAYERS: Player[] = [
     {
         id: k++,
         name: 'Taffarel',
@@ -71,7 +71,7 @@ export const STUDENTS: Student[] = [
     },
     {
         id: k++,
-        name: 'Socrates',
+        name: 'Sócrates',
         age: 56,
         position: POSITIONS.MIDFIELDER ,
         picture: "https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg)/origin-imgresizer.eurosport.com/2011/12/04/787851-20814584-2560-1440.jpg",

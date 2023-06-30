@@ -1,6 +1,6 @@
 export enum POSITIONS {
-    GOAL_KEEPER = "Goal keeper",
+    GOAL_KEEPER = "Goalkeeper",
     DEFENDER = "Defender",
-    MIDFIELDER = "Middle field",
+    MIDFIELDER = "Midfielder",
     FORWARD = "Forward"
 }

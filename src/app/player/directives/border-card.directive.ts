@@ -1,7 +1,7 @@
 import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 
 @Directive({
-  selector: '[studentBorderCard]'
+  selector: '[playerPositionBorderCard]'
 })
 export class BorderCardDirective {
 
@@ -12,7 +12,7 @@ export class BorderCardDirective {
     this.setBorder(this.initialColor);
   }
 
-  @Input('studentBorderCard') borderColor: string; 
+  @Input('playerPositionBorderCard') borderColor: string; 
 
   @HostListener('mouseenter') onMouseEnter() {
     this.setBorder(this.borderColor || this.defaultColor);

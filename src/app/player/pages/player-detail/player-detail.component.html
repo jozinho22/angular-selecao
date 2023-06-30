@@ -1,9 +1,9 @@
-<div *ngIf="student" class="row">
+<div *ngIf="player" class="row">
   <div class="col s12 m8 offset-m2">
-    <h2 class="header center">{{ student.name }}</h2>
+    <h2 class="header center">{{ player.name }}</h2>
     <div class="card horizontal hoverable">
       <div class="card-image">
-        <img [src]="student.picture" />
+        <img [src]="player.picture" />
       </div>
 
       <div class="card-stacked">
@@ -12,25 +12,26 @@
             <tbody>
               <tr>
                 <td>Nom</td>
-                <td>{{ student.name }}</td>
+                <td>{{ player.name }}</td>
               </tr>
               <tr>
                 <td>Age</td>
-                <td>{{ student.age }}</td>
+                <td>{{ player.age }}</td>
               </tr>
               <tr>
                 <td>Position</td>
-                <td>{{ student.position }}</td>
+                <td>{{ player.position }}</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         <div class="card-action">
-          <a (click)="goBack()">Retour</a>
+          <a (click)="goBack()">Go back</a>
+          <a (click)="edit(player)">Edit</a>
         </div>
       </div>
     </div>
   </div>
 </div>
-<h4 *ngIf="!student">Aucun joueur à afficher</h4>
+<h4 *ngIf="!player">Aucun joueur à afficher</h4>

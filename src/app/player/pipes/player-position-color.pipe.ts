@@ -1,9 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { POSITIONS } from '../resources/positions';
-@Pipe({
-  name: 'studentTypeColor'
-})
-export class StudentTypeColorPipe implements PipeTransform {
+
+@Pipe({ name: 'playerPositionColorPipe' })
+export class PlayerPositionColorPipe implements PipeTransform {
 
   transform(position: string): string {
 

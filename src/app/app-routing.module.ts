@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { StudentsListComponent } from './student/students-list/students-list.component';
-import { StudentDetailComponent } from './student/student-detail/student-detail.component';
+import { PlayersListComponent } from './player/pages/players-list/players-list.component';
+import { PlayerDetailComponent } from './player/pages/player-detail/player-detail.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  { path: 'students', component: StudentsListComponent },
-  { path: 'student/:id', component: StudentDetailComponent },
-  { path: '', redirectTo: 'students', pathMatch: 'full' },
+  { path: '', redirectTo: 'players', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent}
 ];
 
